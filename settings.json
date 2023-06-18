@@ -1,6 +1,6 @@
 {
   // editor
-  "editor.fontSize": 20,
+  "editor.fontSize": 18,
   "editor.fontFamily": "Fira Code, Operator Mono",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
@@ -18,6 +18,22 @@
   // cursor
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
+
+  // config related to code formatting
+  // "editor.formatOnSave": true,
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[javascriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true,
+  //   "source.fixAll.tslint": true,
+  //   "source.organizeImports": true
+  // },
+  // "eslint.alwaysShowStatus": true,
+
   // Code formatting settings
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -71,17 +87,24 @@
   /* chat-gpt */
 
   "editor.insertSpaces": true, // use spaces instead of tabs for indentation
-  "editor.renderWhitespace": "all", // show all whitespace characters, including spaces and tabs
+  // "editor.renderWhitespace": "all", // show all whitespace characters, including spaces and tabs
   "files.autoSave": "onFocusChange", // automatically save files when switching focus
   "files.trimTrailingWhitespace": true, // automatically remove trailing whitespace when saving
-  "files.insertFinalNewline": true, // ensure that the file ends with a newline
+  "files.insertFinalNewline": true,
+  "workbench.startupEditor": "none", // ensure that the file ends with a newline
   // Custom settings
-  "javascript.format.insertSemicolons": "insert",
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
-  "javascript.format.insertSpaceAfterOpeningKeywordAndBeforeOpeningBrace": true,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true
-
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.openRepositoryInParentFolders": "never",
+  "git.suggestSmartCommit": false,
+  "window.zoomLevel": 1
   /**************************************************/
 }
