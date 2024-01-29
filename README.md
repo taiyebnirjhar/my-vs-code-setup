@@ -1,20 +1,25 @@
+- Auto Close Tag
 - Auto Rename Tag
+- Better Comments
+- Blackbox Ai
 - Code spell checker
-- Community Material Theme
+- Console Ninja
 - Docs Viewer/Reader
-- Dracula Official
-- Emoji Snippets
-- ES7+ React/Redux/React-Native
-- ES7 React/Redux/GraphQL
+- ES7 React/Redux/GraphQL/React-Native snippets
+- ES7+ React/Redux/React-Native snippets
 - EsLint
-- Github Copilot
 - Gitlens
+- Html Better Auto complete
+- html to JSX
+- Import cost
+- lws theme
 - Live server
 - Material icon
-- Microsoft Edge Tools for VS Code
 - Path Autocomplete
 - Path Intellisense
 - Postman
 - prettier
+- React Documentation
 - Tailwind Intellisense
+- tailwind fold
 - Turbo console

@@ -1,6 +1,6 @@
 {
   // editor
-  "editor.fontSize": 18,
+  "editor.fontSize": 19,
   "editor.fontFamily": "Fira Code, Operator Mono",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
@@ -19,36 +19,23 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
 
-  // config related to code formatting
-  // "editor.formatOnSave": true,
-  // "[javascript]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
-  // "[javascriptreact]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
-  // "editor.codeActionsOnSave": {
-  //   "source.fixAll.eslint": true,
-  //   "source.fixAll.tslint": true,
-  //   "source.organizeImports": true
-  // },
-  // "eslint.alwaysShowStatus": true,
-
   // Code formatting settings
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.tslint": true,
-    "source.organizeImports": true
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.organizeImports": "explicit"
   },
   "eslint.alwaysShowStatus": true,
   "[javascript]": {
+    // ! this one
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnType": true,
     "editor.formatOnSave": true
   },
   "[javascriptreact]": {
+    // ! this one
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnType": true,
     "editor.formatOnSave": true
@@ -57,7 +44,6 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
-  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   "workbench.iconTheme": "material-icon-theme",
   // terminal customization
   "workbench.colorCustomizations": {
@@ -82,7 +68,7 @@
     "terminal.ansiWhite": "#A89984",
     "terminal.ansiYellow": "#FAC03B"
   },
-  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.enabled": true, // ! this one
   /**************************************************/
   /* chat-gpt */
 
@@ -102,8 +88,25 @@
     "markdown": true,
     "scminput": false
   },
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always", // ! this one
   "git.openRepositoryInParentFolders": "never",
   "git.suggestSmartCommit": false,
+  "vscode-edge-devtools.webhintInstallNotification": true,
+  "editor.guides.bracketPairs": true,
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Learn with Sumit Official Theme",
+  "terminal.integrated.env.linux": {},
+  "console-ninja.featureSet": "Community",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "tabnine.experimentalAutoImports": true,
+  "cSpell.userWords": ["MERN", "salesinfo", "Satkhira"],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "tailwind-fold.autoFold": true,
+  // "tailwind-fold.foldedText": "...",
+  "tailwind-fold.foldStyle": "QUOTES",
+  "tailwind-fold.showTailwindImage": false,
+  // "tailwind-fold.foldedTextColor": "violate",
+  "tailwind-fold.foldedTextBackgroundColor": "transparent",
+  "git.autofetch": true,
   "window.zoomLevel": 1
 }
