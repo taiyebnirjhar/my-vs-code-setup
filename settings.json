@@ -1,5 +1,5 @@
 {
-  // editor
+  // Editor Settings
   "editor.fontSize": 19,
   "editor.fontFamily": "Fira Code, Operator Mono",
   "editor.fontLigatures": true,
@@ -15,11 +15,12 @@
       }
     ]
   },
-  // cursor
+
+  // Cursor Settings
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
 
-  // Code formatting settings
+  // Code Formatting
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
@@ -29,84 +30,96 @@
   },
   "eslint.alwaysShowStatus": true,
   "[javascript]": {
-    // ! this one
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnType": true,
     "editor.formatOnSave": true
   },
   "[javascriptreact]": {
-    // ! this one
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnType": true,
     "editor.formatOnSave": true
   },
-  //terminal
+
+  // Terminal Settings - Dracula Theme Colors
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontWeight": "normal",
   "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
   "workbench.iconTheme": "material-icon-theme",
-  // terminal customization
   "workbench.colorCustomizations": {
-    "terminal.background": "#1D2021",
-    "terminal.foreground": "#A89984",
-    "terminalCursor.background": "#A89984",
-    "terminalCursor.foreground": "#A89984",
-    "terminal.ansiBlack": "#1D2021",
-    "terminal.ansiBlue": "#0D6678",
-    "terminal.ansiBrightBlack": "#665C54",
-    "terminal.ansiBrightBlue": "#0D6678",
-    "terminal.ansiBrightCyan": "#8BA59B",
-    "terminal.ansiBrightGreen": "#95C085",
-    "terminal.ansiBrightMagenta": "#8F4673",
-    "terminal.ansiBrightRed": "#FB543F",
-    "terminal.ansiBrightWhite": "#FDF4C1",
-    "terminal.ansiBrightYellow": "#FAC03B",
-    "terminal.ansiCyan": "#8BA59B",
-    "terminal.ansiGreen": "#95C085",
-    "terminal.ansiMagenta": "#8F4673",
-    "terminal.ansiRed": "#FB543F",
-    "terminal.ansiWhite": "#A89984",
-    "terminal.ansiYellow": "#FAC03B"
+    "terminal.background": "#282A36",
+    "terminal.foreground": "#F8F8F2",
+    "terminalCursor.background": "#FF79C6",
+    "terminalCursor.foreground": "#FF79C6",
+    "terminal.ansiBlack": "#21222C",
+    "terminal.ansiBlue": "#6272A4",
+    "terminal.ansiBrightBlack": "#6272A4",
+    "terminal.ansiBrightBlue": "#8BE9FD",
+    "terminal.ansiBrightCyan": "#8BE9FD",
+    "terminal.ansiBrightGreen": "#50FA7B",
+    "terminal.ansiBrightMagenta": "#FF79C6",
+    "terminal.ansiBrightRed": "#FF5555",
+    "terminal.ansiBrightWhite": "#F8F8F2",
+    "terminal.ansiBrightYellow": "#F1FA8C",
+    "terminal.ansiCyan": "#8BE9FD",
+    "terminal.ansiGreen": "#50FA7B",
+    "terminal.ansiMagenta": "#BD93F9",
+    "terminal.ansiRed": "#FF5555",
+    "terminal.ansiWhite": "#F8F8F2",
+    "terminal.ansiYellow": "#F1FA8C"
   },
-  "editor.inlineSuggest.enabled": true, // ! this one
-  /**************************************************/
-  /* chat-gpt */
 
-  "editor.insertSpaces": true, // use spaces instead of tabs for indentation
-  // "editor.renderWhitespace": "all", // show all whitespace characters, including spaces and tabs
-  "files.autoSave": "onFocusChange", // automatically save files when switching focus
-  "files.trimTrailingWhitespace": true, // automatically remove trailing whitespace when saving
+  // Auto Save and File Management
+  "editor.inlineSuggest.enabled": true,
+  "editor.insertSpaces": true,
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "workbench.startupEditor": "none", // ensure that the file ends with a newline
-  // Custom settings
-  "files.exclude": {
-    "**/node_modules": true
-  },
+
+  // Auto Update Import Paths When Renaming Files
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // Git & Copilot Settings
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
     "markdown": true,
     "scminput": false
   },
-  "javascript.updateImportsOnFileMove.enabled": "always", // ! this one
   "git.openRepositoryInParentFolders": "never",
   "git.suggestSmartCommit": false,
-  "vscode-edge-devtools.webhintInstallNotification": true,
+  "git.autofetch": true,
+
+  // JavaScript & TypeScript Enhancements
   "editor.guides.bracketPairs": true,
+
+  // Workspace & Explorer Preferences
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Learn with Sumit Official Theme",
-  "terminal.integrated.env.linux": {},
-  "console-ninja.featureSet": "Community",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "tabnine.experimentalAutoImports": true,
-  "cSpell.userWords": ["MERN", "salesinfo", "Satkhira"],
-  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.colorTheme": "Dracula Theme",
+  "workbench.startupEditor": "none",
+  "window.zoomLevel": 1,
+
+  // Improve Single Click File Opening (Prevents Need for Double Click)
+  "workbench.list.openMode": "singleClick",
+
+  // Tailwind CSS Folding
   "tailwind-fold.autoFold": true,
-  // "tailwind-fold.foldedText": "...",
   "tailwind-fold.foldStyle": "QUOTES",
   "tailwind-fold.showTailwindImage": false,
-  // "tailwind-fold.foldedTextColor": "violate",
-  "tailwind-fold.foldedTextBackgroundColor": "transparent",
-  "git.autofetch": true,
-  "window.zoomLevel": 1
+
+  // Ignore node_modules in Explorer
+  "files.exclude": {
+    "**/node_modules": true
+  },
+
+  // Console Ninja
+  "console-ninja.featureSet": "Community",
+
+  // Spell Checker Custom Words
+  "cSpell.userWords": ["MERN", "salesinfo", "Satkhira"],
+  "terminal.integrated.env.osx": {},
+
+  //Power mode
+  "powermode.enabled": true,
+  "powermode.presets": "flames"
 }
